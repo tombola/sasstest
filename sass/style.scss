@@ -1,7 +1,7 @@
 $sunset: #ff4439;
 $textcolour: white;
 
-@mixin fontdefaults() {
+.fontdefaults {
     color: $textcolour;
     font-family: Georgia;
 }
@@ -11,10 +11,10 @@ body {
 }
 
 h1 {
-    @include fontdefaults;
+    @extend .fontdefaults;
     font-weight: normal;
 }
 
 p {
-    @include fontdefaults;
+    @extend .fontdefaults;
 }
