@@ -1,0 +1,20 @@
+$sunset: #ff4439;
+$textcolour: white;
+
+@mixin fontdefaults() {
+    color: $textcolour;
+    font-family: Georgia;
+}
+
+body {
+    background-color: $sunset;
+}
+
+h1 {
+    @include fontdefaults;
+    font-weight: normal;
+}
+
+p {
+    @include fontdefaults;
+}
